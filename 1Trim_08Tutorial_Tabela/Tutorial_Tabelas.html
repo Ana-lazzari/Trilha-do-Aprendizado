@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de Tabelas</title>
+    <link rel="icon" type="image/x-icon" href="img/html.webp">
+    <link rel="stylesheet" href="css.tutorial.css">
+</head>
+
+<body bgcolor=#1f3f66>
+
+    <header> 
+        <div id="logo"> 
+            <picture>
+                <img src="img/logo.png" alt="Logotipo">
+            </picture>
+        </div> 
+    </header> 
+    
+<font size="3">
+    <h1> <font color="black"> Tabelas HTML </font></h1> 
+    <h4><font color="black">por Ana Livia Lazzari </font></h4>
+    <hr>  
+    <br> 
+
+    <h2 id="topicos"> <font color="black">Tópicos </font></h2>
+    <ol> 
+        <li> <a href="#tabela"> O que é uma tabela? </a></li>
+        <li> <a href="#estrutura">Tags Estruturais de uma Tabela</a> </li>
+        <li> <a href="#basica">Tabela Básica </a></li>
+        <li> <a href="#celula">Tabela com Célula de Título </a></li>
+        <li> <a href="#vertical">Tabela com Títulos Verticais</a> </li>
+        <li> <a href="#estruturada">Tabela Estruturada</a> </li>
+        <li> <a href="#vazia">Tabela com Célula Vazia</a> </li>
+        <li> <a href="#abrangente">Tabela com Célula mais Abrangente</a></li> 
+        <li> <a href="#colspan"> Colspan </a></li>
+        <li> <a href="#rowspan"> Rowspan </a></li>
+        <li> <a href="#titulo">Título da Tabela </a></li>
+        <li> <a href="#utilizando">Utilizando Colgroup e Col</a> </li>
+        <li> <a href="#download"> Download </a></li>
+    </ol>
+    <br>
+    <br>
+
+    <h2 id="tabela"> O que é uma tabela? </h2>
+    <hr> 
+    <p> As tabelas são listas de dados em duas dimensões e são compostas por linhas e colunas. 
+        <br> Portanto, são muito utilizadas para apresentar dados de uma forma organizada.
+        <p><a href="img/tabela.webp" target="_blank" >
+            <img src="img/tabela.webp" alt="" width="15%"> 
+        </p></a>  
+        <br> <a href="#topicos"> Voltar ao início! </a>
+    </p>
+    <br>
+    <br>
+
+    <h2 id="estrutura"> Tags Estruturais de uma Tabela </h2>
+    <hr>
+    <p> As tags e suas funções utilizadas para a estrutura das tabelas são:
+        <ul>
+            <li> <b>< table border="1"> e < /table >:</b> Criar tabela com borda</li>
+            <li> <b>< table > e < /table >:</b> Criar tabela sem borda</li>
+            <li> <b>< tr > e < /tr >:</b> Criar cada linha </li>
+            <li> <b>< td > e < /td >:</b> Criar os elementos </li>
+            <li> <b> < th > e < /th >:</b> Representar Título</li>
+            <li> <b> < thead > e < /thead >:</b> Cabeçalho, geralmente título  </li>
+            <li> <b> < tbody > e < /tbody >:</b> Corpo da tabela </li>
+            <li> <b> < tfoot > e < /tfoot >:</b> Rodapé da tabela </li>
+            <li> <b> < caption > e < /caption >:</b> Título da tabela </li>
+            <li> <b> < colgroup >< /colgroup > e < col class="">< /col >:</b> Direcionar cor vinda do Style</li>
+        </ul> 
+    </p> 
+    <br> <a href="#topicos"> Voltar ao início! </a>
+    <br>
+    <br>
+    <br>
+
+    <h2 id="basica"> Tabela Básica </h2>
+    <hr>
+    <p> Vejamos um exemplo de uma <b>tabela básica</b> e sua estrutura: </p>
+    <h4>Estrutura</h4>
+    <pre> < table border="1"> 
+        < tr>
+            < td> Nome < /td>
+            < td> Idade < /td>
+            < td> Profissão  < /td>
+        < /tr>
+        < tr> 
+            < td> Ana Livia Lazzari < /td>
+            < td> 16  < /td>
+            < td> Estudante  < /td>
+        < /tr>
+        < tr>  
+            < td> Elen Aline Bassani < /td>
+            < td> 16  < td>
+            < td> Estudante < /td>
+        < /tr>
+< /table> 
+    </pre> 
+    <h4>Resultado sem Borda </h4>
+    <table> 
+        <tr> 
+            <td> Nome </td>
+            <td> Idade </td>
+            <td> Profissão  </td>
+        </tr>
+        <tr> 
+            <td> Ana Livia Lazzari </td>
+            <td> 16  </td>
+            <td> Estudante  </td>
+        </tr>
+        <tr> 
+            <td> Elen Aline Bassani </td>
+            <td> 16  </td>
+            <td> Estudante </td>
+        </tr>
+    </table>
+    <h4>Resultado com Borda </h4>
+    <table border="1"> 
+        <tr> 
+            <td> Nome </td>
+            <td> Idade </td>
+            <td> Profissão  </td>
+        </tr>
+        <tr> 
+            <td> Ana Livia Lazzari </td>
+            <td> 16  </td>
+            <td> Estudante  </td>
+        </tr>
+        <tr> 
+            <td> Elen Aline Bassani </td>
+            <td> 16  </td>
+            <td> Estudante </td>
+        </tr>
+    </table>
+    <br> <a href="#topicos"> Voltar ao início! </a>
+    <br>
+    <br>
+    <br>
+
+    <h2 id="celula"> Tabela com Célula de Título </h2>
+    <hr>
+    <p> Caso queira incluir uma ou mais células que <b>representem títulos</b>, ganhando um destaque 
+        em relação às demais células, pode utilizar a tag <b>< th ></b>. 
+        <br> Vejamos a seguir:</p>
+        <h4>Estrutura</h4>
+        <pre>< table border="1"> 
+        < tr>
+            < th> País < /td>
+            < th> Cidade < /td>
+            < th> Paisagem  < /td>
+        < /tr>
+        < tr> 
+            < td> Grécia < /td>
+            < td> Santorini < /td>
+            < td> < a href="img/santorini.jpg" target="_blank"> 
+                < img src="img/santorini.jpg"alt="" width="20%"> < /a> < /td>
+        < /tr>
+        < tr> 
+            < td> Emirados Árabes Unidos < /td>
+            < td> Dubai  < td>
+            < td> < a href="img/Dubai.jpg" target="_blank"> 
+                < img src="img/Dubai.jpg" alt="" width="15%"> < /a> < /td>
+        < /tr>
+< /table> 
+        </pre> 
+        <h4>Resultado</h4>
+        <table border="1"> 
+            <tr>
+                <th> País </th>
+                <th> Cidade </th>
+                <th> Paisagem </th>
+            </tr>
+            <tr>
+                <td> Grécia </td>
+                <td> Santorini </td>
+                <td> <a href="img/santorini.jpg" target="_blank"> 
+                     <img src="img/santorini.jpg"alt="" width="15%"> </a> </td>           
+            </tr>
+            <tr>
+                <td> Emirados Árabes Unidos </td>
+                <td>  Dubai </td>
+                <td> <a href="img/Dubai.jpg" target="_blank"> 
+                     <img src="img/Dubai.jpg" alt="" width="15%"> </a> </td>
+            </tr>
+        </table>
+        
+        <br> <a href="#topicos"> Voltar ao início! </a>
+    <br>
+    <br>
+    <br>
+
+    <h2 id="vertical"> Tabela com Títulos Verticais </h2>
+    <hr> 
+    <p> Podemos ainda aplicar o <b> < th > para títulos verticais</b>, ou seja, na primeira coluna. </p>
+    <h4>Estrutura</h4>
+        <pre>< table border="1" bgcolor="Gaisboror"> 
+        < tr>
+            < th> País < /td>
+            < td> Brasil < /td>
+            < td> Estados Unidos  < /td>
+            < td> Grécia < /td>
+        < /tr>
+        < tr> 
+            < th> Bandeira < /td>
+            < td> < a href="img/brasil.jpeg" target="_blank"> 
+                < img src="img/brasil.jpeg" alt="" width="20%"> < /a> < /td>
+            < td>  a href="img/eua.jpeg" target="_blank">
+                < img src="img/eua.jpeg" alt="" width="20%"> < /a> < /td>
+            < td>  a href="img/grecia.jpeg" target="_blank">
+                < img src="img/grecia.jpeg" alt="" width="20%"> < /a> < /td>
+        < /tr>
+< /table> 
+        </pre> 
+    <h4>Resultado</h4>
+        <table border="1" bgcolor="Gainsboro"> 
+            <tr>
+                <th> País  </th>
+                <td> Brasil </td>
+                <td> Estados Unidos  </td>
+                <td> Grécia </td>
+            </tr>
+            <tr>
+                <th> Bandeira </th>
+                <td> <a href="img/brasil.jpeg" target="_blank"> 
+                    <img src="img/brasil.jpeg" alt="" width="20%"> </a> </td>
+                <td> <a href="img/eua.jpeg" target="_blank">
+                    <img src="img/eua.jpeg" alt="" width="20%"> </a> </td>
+                <td> <a href="img/grecia.jpeg" target="_blank">
+                    <img src="img/grecia.jpeg" alt="" width="20%"> </a> </td>
+            </tr>
+        </table>
+    
+    <br> <a href="#topicos"> Voltar ao início! </a>
+    <br> 
+    <br>
+    <br>
+
+    <h2 id="estruturada"> Tabela Estruturada </h2>
+    <hr> 
+    <p> Anteriormente, vimos que a estrutura básica de uma tabela consiste nas tags <b>< tr >, < td > e as células de título < th ></b>. 
+        <br> Porém, além dessas, também há tags que servem para estruturar melhor a tabela. São elas: </p>
+        <dl> 
+            <dt> <b>< thead > e < /thead > </b></dt>
+                <dd> – Esta tag representa o cabeçalho da tabela, geralmente composta por células título. </dd>
+            <dt> <b>< tbody > e < /tbody > </b></dt>
+                <dd> – Essa tag representa o corpo da tabela.</dd>
+            <dt> <b>< tfoot > e < /tfoot > </b></dt>
+                <dd> – Essa tag representa o rodapé da tabela.</dd>
+            </dl> 
+    <p> Portanto, essas tags tem como principal efeito <b>manter uma semântica adequada</b> para suas tabelas.
+        <br> Sendo assim, vejamos então a seguinte imagem para exemplificar a estrutura de uma tabela:</p>
+        <h4>Estrutura</h4> 
+        <pre> < table border="1">
+        < thead bgcolor="DarkSlateBlue">
+            < tr>
+                < th> Matéria< /th>
+                < th> Aula < /th>
+                < th> Exercício < /th>
+            < /tr>
+        < /thead>
+        < tbody bgcolor="Gainsboro">
+            < tr>
+                < td> DWeb < /td>
+                < td> Aula 01 < /td>
+                < td> < address> < a href= "Aula01_01.html" target="_blank"> Ex01 - Tags de Texto < /a> < /address> < /td>
+            < /tr>
+            < tr>
+                < td> DWeb < /td>
+                < td> Aula 01 < /td>
+                < td> < address> < a href= "Aula01_02.html" target="_blank"> Ex02 - Letras de Música < /a> < /address>< /td>
+            < /tr>
+        < /tbody>
+        < tfoot  bgcolor="Navy">
+                < td>...< /td>
+                < td>...< /td>
+                < td>...< /td>
+        < tfoot>
+< /table>
+    </pre>
+        <h4>Resultado</h4>
+        <table border="1">
+            <thead bgcolor="DarkSlateBlue">
+                <tr>
+                    <th>Matéria</th>
+                    <th>Aula </th>
+                    <th>Exercício </th>
+                </tr>
+            </thead>
+            <tbody bgcolor="Gainsboro">
+                <tr>
+                    <td>DWeb</td>
+                    <td> Aula 01</td>
+                    <td> <address> <a href= "Aula01_01.html" target="_blank"> Ex01 - Tags de Texto </a> </address> </td>
+                </tr>
+                <tr>
+                    <td>DWeb</td>
+                    <td> Aula 01</td>
+                    <td> <address> <a href= "Aula01_02.html" target="_blank"> Ex02 - Letras de Música </a> </address></td>
+                </tr>
+            </tbody>
+            <tfoot bgcolor="Navy">
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+            </tfoot>
+        </table>
+    
+        <br> <a href="#topicos"> Voltar ao início! </a>
+        <br>
+        <br>
+        <br>
+        
+    <h2 id="vazia"> Tabela com Célula Vazia</h2>
+    <hr>
+    <p>Caso seja necessário incluir uma <b>célula vazia</b> (ou seja: sem nenhum valor dentro) na sua tabela, uma saída seria apenas incluir a <b>< td > ou < th ></b> sem nenhum conteúdo. 
+        <br> No entanto, <b>isso não é recomendado</b>, porque alguns navegadores não conseguem ler adequadamente uma célula vazia.
+        </p>
+        <h4>Estrutura</h4>
+        <pre> < table border="1">
+        < tr>
+            < th> < /th>
+            < th> Ana Livia Lazzari < /th>
+        < /tr>
+        < tr>
+            < td> Telefones < /td>
+            < td> < ul> 
+                < li> (42)9 99145-0707 < /li>
+                < li> (42)3667-1266< /li>
+            < /ul> < /td>
+        < /tr>
+        < tr>
+            < td> Emails < /td>
+            < td> < ul> 
+                < li> < a href="mailto:contato@contato.com"> analivialazz@gmail.com < a> < / li>
+                < li> < a href="mailto:contato@contato.com"> ana.lazzari.ifpr@gmail.com < /a>  < /li>
+            < /ul> < /td>
+        < /tr>
+< /table>
+        </pre>
+        <h4> Resultado </h4>
+        <table border="1">
+            <tr>
+                <th> </th>
+                <th>Ana Livia Lazzari</th>
+            </tr>
+            <tr>
+                <td>Telefones</td>
+                <td> <ul>
+                    <li> (42)9 99145-0707 </li>
+                    <li> (42)3667-1266</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td>Emails</td>
+                <td> <ul>
+                    <li><a href="mailto:contato@contato.com"> analivialazz@gmail.com </a> </li>
+                    <li><a href="mailto:contato@contato.com"> ana.lazzari.ifpr@gmail.com </a>  </li>
+                </ul></td>
+            </tr>
+        </table>
+        
+        <br> <a href="#topicos"> Voltar ao início! </a>
+        <br>
+        <br>
+        <br>
+
+    <h2 id="abrangente"> Tabela com Célula mais Abrangente </h2>
+    <hr>
+    <p> Em algumas situações, temos a necessidade de utilizar uma mesclagem de célula, ou seja, <b>criar uma célula que abrange mais do que uma linha ou coluna</b>. 
+        <br> Dessa forma, podemos utilizar os atributos colspan e rowspan. 
+        <br> O <b>colspan=”x” </b>vai fazer uma mesclagem de colunas, e o <b>rowspan=”x” </b>vai mesclar linhas, bastando substituir o x pelo número de colunas ou linhas que deseja ocupar. 
+        <br>Com isso, vamos ver os resultados a seguir:</p>
+        <h3 id="colspan"> Colspan </h3>
+        <h4>Estrutura</h4>
+        <pre>< table border="1">
+        < tr>
+            < th> Nome < /th>
+            < th colspan="2">Telefones < /th>
+            < th colspan="2">Emails < /th>
+        < /tr>
+        < tr>
+            < td> Ana < /td>
+            < td> (42)9 9145-0707 < /td>
+            < td> (42)3667-1266 < /td>
+            < td> < a href="mailto:contato@contato.com"> analivialazz@gmail.com < /a> < /td>
+            < td> < a href="mailto:contato@contato.com"> ana.lazzari.ifpr@gmail.com < /a> < /td>
+        < /tr>
+        < tr>
+            < td> Regina < /td>
+            < td> (42)9 9136-0707 < /td>
+            < td> (42)3667-1266 < /td>
+            < td> < a href="mailto:contato@contato.com"> regina.lazzari@hotmail.com < /a> < /td>
+            < td> < a href="mailto:contato@contato.com"> farmalazzari@hotmail.com < /a> < /td>
+        < /tr>
+< /table>
+        </pre>
+        <h4>Resultado</h4>
+        <table border="1">
+            <tr>
+                <th>Nome</th>
+                <th colspan="2">Telefones</th>
+                <th colspan="2">Emails</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td> (42)9 9145-0707 </td>
+                <td> (42)3667-1266 </td>
+                <td> <a href="mailto:contato@contato.com"> analivialazz@gmail.com </a> </td>
+                <td> <a href="mailto:contato@contato.com"> ana.lazzari.ifpr@gmail.com </a> </td>
+            </tr>
+            <tr>
+                <td>Regina</td>
+                <td> (42)9 9136-0707 </td>
+                <td> (42)3667-1266 </td>
+                <td> <a href="mailto:contato@contato.com"> regina.lazzari@hotmail.com </a> </td>
+                <td> <a href="mailto:contato@contato.com"> farmalazzari@hotmail.com </a> </td>
+            </tr>
+        </table>
+        <br> <a href="#topicos"> Voltar ao início! </a>
+        <br>
+        <br>
+        <h3 id="rowspan"> Rowspan </h3>
+        <h4>Estrutura</h4>
+    <pre>< table border="1">
+        < tr>
+            < th> Primeiro Nome: < /th>
+            < td> Ana < /td>
+        < /tr>
+        < tr>
+            < th rowspan="2">Emails: < /th>
+            < td> < a href="mailto:contato@contato.com"> analivialazz@gmail.com < /a>< /td>
+        < /tr>
+        < tr>
+            < td> < a href="mailto:contato@contato.com">  ana.lazzari.ifpr@gmail.com < /a>< /td>
+        < /tr>
+< /table>
+    </pre>
+        <h4>Resultado</h4>
+        <table border="1">
+            <tr>
+              <th>Primeiro Nome:</th>
+              <td>Ana</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Emails:</th>
+              <td><a href="mailto:contato@contato.com"> analivialazz@gmail.com </a></td>
+            </tr>
+            <tr>
+              <td><a href="mailto:contato@contato.com"> ana.lazzari.ifpr@gmail.com </a></td>
+            </tr>
+        </table>
+       
+        <br> <a href="#topicos"> Voltar ao início! </a>
+        <br>
+        <br>
+        <br>
+
+    <h2 id="titulo"> Título da Tabela  </h2>
+    <hr>
+    <p> A tabela HTML tem uma tag particular para <b>definir um título</b>. Essa tag é a <b> < caption > </ caption ></b>. 
+        <br> Em contraste com os demais elementos da tabela, a tag < caption > não será composta por células, portanto ficará acima da tabela, <b>como um título.</b></p>
+        <h4>Estrutura</h4>
+    <pre>< table border="1">
+        < caption> < b> HTML < /b> < /caption>
+        < tr>
+            < th bgcolor="Gainsboro"> Site < /th>
+            < th bgcolor="Gainsboro"> Link < /th>
+        < /tr>
+        < tr>
+            < td> W3schools < /td>
+            < td> < a href="https://www.w3schools.com/" target="_blank"> W3schools < /a> < /td>
+        < /tr>
+        < tr>
+            < td> Mozilla < /td>
+            < td> < a href="https://developer.mozilla.org/pt-BR/" target="_blank"> Mozilla < /a> < /td>
+        < /tr>
+< /table>
+    </pre>
+        <h4>Resultado</h4>
+        <table border="1">
+            <caption> <b> HTML </b></caption>
+            <tr>
+                <th bgcolor="Gainsboro">Site</th>
+                <th bgcolor="Gainsboro">Link</th>
+            </tr>
+            <tr>
+                <td>W3schools</td>
+                <td> <a href="https://www.w3schools.com/" target="_blank"> W3schools </a> </td>
+            </tr>
+            <tr>
+                <td>Mozilla</td>
+                <td> <a href="https://developer.mozilla.org/pt-BR/" target="_blank"> Mozilla </a> </td>
+            </tr>
+        </table>
+        
+        <br> <a href="#topicos"> Voltar ao início! </a>
+        <br>
+        <br>
+        <br>
+
+    <h2 id="utilizando"> Utilizando Colgroup e Col </h2>
+    <hr>
+    <p>Anteriormente, explicamos que hoje em dia, boa parte dos atributos de uma tabela se encontra depreciado. Portanto, a estilização deve ser feita através do <abbr title="Cascading Style Sheets">CSS</abbr>. 
+        <br> Dessa forma, existe um elemento muito importante que nos permite <b>criar um grupo de colunas, podendo assim estilizar diversas colunas de uma só vez. </b> 
+        <br> Esse elemento é a tag <b>< colgroup > e < colgroup ></b>. Posteriormente, dentro do grupo de colunas, incluímos então as tags <b>< col > < /col ></b> para poder definir cada coluna.</p>
+        <h4>Estrutura</h4>
+    <pre>(style)
+
+< table border="1">
+    < caption> < b> Tags de Formatação < /b> < /caption>
+        < colgroup>
+            < col class="azul">
+            < col class="vermelho">
+            < col class="amarelo">
+        < /colgroup>
+        < tr>
+            < th> Tag < /th>
+            < th> Código < /th>
+            < th> Resultado < /th>
+        < /tr>
+        < tr>
+            < td> del < /td>
+            < td> < del> < /del> < /td>
+            < td> Texto < del> excluído < /del>! < /td>
+        < /tr>
+        < tr>
+            < td> ins < /td>
+            < td> < ins> < /ins> < /td>
+            < td> Texto < ins> inserido < /ins>! < /td>
+        < /tr>
+        < tr>
+            < td> sub < /td>
+            < td> < sub> < /sub> < /td>
+            < td> Texto < sub> subscript < /sub> < /td>
+        < /tr>
+        < tr>
+            < td> sup < /td>
+            < td> < sup> < /sup> < /td>
+            < td> Texto < sup> superscript < /sup> < /td>
+        < /tr>
+< /table>
+    </pre>
+        <h4>Resultado</h4>
+        <style>
+            .azul
+            {
+                background-color: rgb(14, 160, 173);
+            }
+            .cinza
+            {
+                background-color: rgb(186, 186, 186);
+            }
+            .verde
+            {
+                background-color: rgb(33, 184, 142);
+            }
+        </style>
+        <table border="1">
+            <caption> <b> Tags de Formatação </b></caption>
+          <colgroup>
+            <col class="azul">
+            <col class="cinza">
+            <col class="verde">
+          </colgroup>
+          <tr>
+            <th>Tag</th>
+            <th>Código</th>
+            <th>Resultado</th>
+          </tr>
+          <tr>
+            <td> del</td>
+            <td>< del> < /del> </td>
+            <td>Texto <del>excluído</del>!</td>
+          </tr>
+          <tr>
+            <td>ins</td>
+            <td>< ins> < /ins> </td>
+            <td>Texto <ins>inserido</ins>!</td>
+          </tr>
+          <tr>
+            <td>sub</td>
+            <td>< sub> < /sub></td>
+            <td>Texto <sub>subscript</sub></td>
+          </tr>
+          <tr>
+            <td>sup</td>
+            <td>< sup> < /sup></td>
+            <td>Texto <sup>superscript</sup></td>
+          </tr>
+        </table>
+        
+        <br> <a href="#topicos"> Voltar ao início! </a>
+        <br> 
+        <br>
+        <br>
+    
+    <h3 id="download"> Download</h3> 
+    <hr>
+    <p> 
+        Tutorial de Tabelas em HTML: <a href="Download.zip" download="Tutorial de Tabelas em HTML" type="application/zip"> Fazer download! </a>
+        <br> 
+        <br> <a href="#topicos"> Voltar ao início! </a>
+    </p>
+    <br>
+
+</font>
+</body>
+</html>
