@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Multimídias </title>
+    <link rel="stylesheet" href="css/multimidia.css">
+</head>
+
+<body>
+<font color="gainsboro">
+
+    <header> 
+        <div id="logo"> 
+            <picture>
+                <img src="img/logo.png" alt="Logotipo">
+            </picture>
+        </div> 
+    </header> 
+    
+    <h1> Multimídias </h1>
+        <p> São diversos tipos de mídias, tais como:
+            <ul>
+                <li> Vídeo </li>
+                <li> Áudio </li>
+                <li> Imagem </li>
+                <li> Sites </li>
+                <li> Dentre outros </li>
+            </ul>
+        </p>
+
+    <h2> Incorporando Multimídias a um site </h2>
+        <h3> Tag iframe </h3>
+            <p> Com essa tag é possível colocar sites, vídeos, áudios. </p>
+        
+        <h4> Incorporar Sites </h4>
+            <iframe src="https://irati.ifpr.edu.br" frameborder="0" width="50%" height="200px"> </iframe>
+        
+        <h4> Incorporar Áudio </h4>
+            <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/719481544&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/baitaca-music" title="Baitaca" target="_blank" style="color: #cccccc; text-decoration: none;">Baitaca</a> · <a href="https://soundcloud.com/baitaca-music/do-fundo-da-grota" title="Do Fundo da Grota" target="_blank" style="color: #cccccc; text-decoration: none;">Do Fundo da Grota</a></div>
+        
+        <h4> Incorporar Vídeo </h4>
+            <iframe width="50%" height="300" src="https://www.youtube.com/embed/EtTbS-KdcrE?si=jpgZ0Xg0PjOLRvyJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h3> Tag video </h3>
+            <video poster="video/Bike.jpg" width="50%" controls> 
+                <source src="video/_Bike.mp4" type="video/mp4">
+            </video>
+        
+        <h3> Tag audio </h3>
+            <audio preload="metadata" controls>
+                <source src="audio/Hey Sailor - Letter Box.ogg" type="audio/ogg">
+            </audio>
+
+        <h3> Tag picture </h3>
+            <source media="(max-width:500px)" srcset="img/bike_110.jpg">
+            <img src="img/bike_full.jpg" width="50%"> 
+
+</font>
+</body>
+</html>
