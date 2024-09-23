@@ -1,0 +1,408 @@
+body{
+    color:gainsboro;
+}
+
+.esqcima{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.esqbaixo{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 120px;
+}
+
+.dircima{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 800px;
+    bottom: 230px;
+}
+
+.dirbaixo{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 800px;
+    bottom: 120px;
+}
+
+
+
+
+.cima{
+    background-color: blue;
+}
+.centro{
+    background-color: green;
+}
+.baixo{
+    background-color: red;
+}
+.boxesqcima{
+    background-color: green;
+    width: 200px;
+    height: 100px; 
+    position: relative;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;
+}
+.boxesqcentro{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;
+}
+.boxesqbaixo{
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;
+}
+.boxdircima{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 1120px;
+    bottom: 60px;
+}
+.boxdircentro{
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 1120px;
+    bottom: 60px;
+}
+.boxdirbaixo{
+    background-color: green;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 1120px;
+    bottom: 60px;
+}
+
+
+
+
+
+.italia1{
+    background-color: green;
+    width: 90px;
+    height: 170px;
+}
+.italia2{
+    background-color: white;
+    width: 90px;
+    height: 170px;
+    position: absolute;
+    left: 165px;
+    top: 1790px;
+}
+.italia3{
+    background-color: red;
+    width: 90px;
+    height: 170px;
+    position: absolute;
+    left: 255px;
+    top: 1790px;
+}
+
+.polonia1{
+    background-color: white;
+    width: 270px;
+    height: 90px;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+}
+.polonia2{
+    background-color: red;
+    width: 270px;
+    height: 90px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+.alem1{
+    background-color: black;
+    width: 270px;
+    height: 70px;
+}
+.alem2{
+    background-color: red;
+    width: 270px;
+    height: 70px;
+}
+.alem3{
+    background-color: yellow;
+    width: 270px;
+    height: 70px;
+}
+
+.bel1{
+    background-color: black;
+    width: 90px;
+    height: 200px;
+}
+.bel2{
+    background-color: yellow;
+    width: 90px;
+    height: 200px;
+    position: absolute;
+    left: 166px;
+    top: 2537px;
+}
+.bel3{
+    background-color: red;
+    width: 90px;
+    height: 200px;
+    position: absolute;
+    left: 250px;
+    top: 2537px;
+}
+
+.ing1{
+    background-color: white;
+    width: 130px;
+    height: 70px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+.red1{
+    background-color: red;
+    width: 132px;
+    height: 40px;
+}
+.ing2{
+    background-color: white;
+    width: 130px;
+    height: 70px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.red2{
+    background-color: red;
+    width: 40px;
+    height: 180px;
+    position: absolute;
+    left: 205px;
+    top: 2798px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.ing3{
+    background-color: white;
+    width: 130px;
+    height: 70px;
+    position: absolute;
+    left: 245px;
+    top: 2798px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;;
+}
+.red3{
+    background-color: red;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    left: 245px;
+    top: 2868px;
+    border-right: 1px solid black;
+}
+.ing4{
+    background-color: white;
+    width: 130px;
+    height: 70px;
+    position: absolute;
+    left: 245px;
+    top: 2908px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.sue1{
+    background-color: DodgerBlue;
+    width: 100px;
+    height: 70px;
+}
+.yell1{
+    background-color: yellow;
+    width: 100px;
+    height: 40px;
+}
+.sue2{
+    background-color: DodgerBlue;
+    width: 100px;
+    height: 70px;
+}
+.yell2{
+    background-color: yellow;
+    width: 40px;
+    height: 180px;
+    position: absolute;
+    left: 175px;
+    top: 3041px;
+}
+.sue3{
+    background-color:DodgerBlue;
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    left: 215px;
+    top: 3041px;
+}
+.yell3{
+    background-color: yellow;
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    left: 215px;
+    top: 3111px;
+}
+.sue4{
+    background-color: DodgerBlue;
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    left: 215px;
+    top: 3151px;
+}
+
+.retangulo{
+    background-color: green;
+    width: 320px;
+    height: 200px;
+}
+.losango{
+    background-color: yellow;
+    width: 130px;
+    height: 130px;
+    position: relative;
+    left: 90px;
+    top: 35px;
+    transform: rotate(45deg);  
+}
+.circulo{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-color: blue;
+    border-radius: 70px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,#0b1726,#1f3f66);
+    width: 90%; /* corpo de texto ocupa 90% da area visivel no navegador */
+    margin: 0 auto; /* divide o conteudo de forma proporcional no navegador*/
+}
+
+header{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161616;
+    margin-top: 50px;
+    border-radius: 5px; /* arredondar cantos */
+}
+
+#logo img{ /* "#" quando é id, "." quando é class */
+    width: 45%;
+    padding-top: 40px;
+}
+
+.navegacao{
+    overflow: hidden;
+}
+
+.navegacao a{ /* altera os links */
+    color: rgb(173, 173, 173);
+    float: right;
+    display: block; 
+    text-decoration: none;
+    padding: 10px;
+    text-align: right;
+}
+
+.navegacao a:hover{ /* pseudoclasse, faz alteracoes quando o mouse passa por cima do conteudo */
+    color: #e32936; /* muda a cor da fonte */
+    background-color: black; /* muda a cor do fundo */
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #161616;
+    margin: 8px;
+}
+
+li{
+    float: right;
+    margin: 2px;
+}
+
+li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background-color:#202020 ;
+}
+
+li.dropdownn{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 235px;
+    background-color: darkgrey;
+    min-width: 100px;
+    width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    background-color: darkgrey;
+}
+
+.dropbtn:hover .dropdown-content{
+    display: block;
+}

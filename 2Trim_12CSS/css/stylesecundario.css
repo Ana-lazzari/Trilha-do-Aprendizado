@@ -1,0 +1,10 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgray;
+    font-style: unset;
+}
+h1{
+    background-color: gray;
+    color:lightgray;
+    font-style: italic;
+}

@@ -1,0 +1,97 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: #777;
+}
+
+.caption{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.parallax1{
+    position: relative;
+    background-image: url(../img/imagem1.webp);
+    height: 100%;
+    opacity: 0.60;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax2{
+    position: relative;
+    background-image: url(../img/imagem2.webp);
+    height: 100%;
+    opacity: 0.60;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax3{
+    position: relative;
+    background-image: url(../img/imagem3.webp);
+    height: 100%;
+    opacity: 0.60;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax4{
+    position: relative;
+    background-image: url(../img/imagem4.webp);
+    height: 100%;
+    opacity: 0.60;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.texto1{
+    background-color: white;
+    text-align: justify;
+    padding: 30px 40px 30px 40px;
+}
+
+.texto2{
+    background-color: white;
+    text-align: ju;
+    padding: 20px 30px 20px 30px;
+}
+
+.texto3{
+    background-color: white;
+    text-align: justify;
+    padding: 20px 30px 20px 30px;
+}
+
+.texto4{
+    background-color: white;
+    text-align: justify;
+    padding: 20px 30px 20px 30px;
+}
+
+.texto2 h3{
+    text-align: center;
+}
+.texto3 h3{
+    text-align: center;
+}
+.texto4 h3{
+    text-align: center;
+}
